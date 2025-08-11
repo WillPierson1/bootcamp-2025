@@ -1,0 +1,30 @@
+body{
+    height: 500px;
+}
+
+.container{
+    /* Control direct children elements to act in the 'flex' way of displaying things */
+    display: flex;
+
+    height: 100%;
+    /* justify-content: center; */
+    /* align-items: end; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap; */
+
+}
+
+.items {
+
+}
+
+#item2{
+    align-self: flex-end;
+}
+
+div {
+    width: 50px;
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+}

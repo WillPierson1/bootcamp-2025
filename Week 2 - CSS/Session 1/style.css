@@ -1,0 +1,47 @@
+/* 
+
+selector {
+    propery: value;
+}
+
+element {
+.class {
+#id {
+
+Note: ID's have a higher priority than classes
+
+Get child elements inside another element (DIRECT CHILD):
+
+element1 > element2{ 
+}
+
+
+
+element3 element4{
+}
+
+*/
+
+
+h1 {
+    color: rebeccapurple;
+}
+
+p {
+    color: red;
+}
+
+.aside {
+    color: green;
+}
+
+#special{
+    color: blue;
+    padding: 10px;
+    border: 2px solid red;
+    font-size: 20px;
+}
+
+div > p{
+    color: orange;
+}

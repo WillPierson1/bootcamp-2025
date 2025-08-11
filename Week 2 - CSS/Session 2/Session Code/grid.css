@@ -1,0 +1,29 @@
+.magazine-layout{
+    display: grid;
+    
+    /* Grid Fractions */
+    /* Three columns  */
+    /* Using fractions (fr) opposed to pixels because fr are relative which is good for adding in new columns dynamically ensuring we don't 'bleed out' of the parent element */
+    /* Note that we are just controlling the X axis here! */
+    grid-template-columns: 1fr 2fr 2fr; 
+    
+    /* Rows */
+    /* Auto takes up the remaining space */
+    grid-template-rows: auto 1fr auto;
+
+    /* Gap */
+    /* This is so we don't have to do specific margins in between elements, making spacing between elements easier */
+    /* Margin causes headaches because you need to do maths to total it up correctly, gap does this automatically for us */
+
+    gap: 50px;
+
+    /* Minimum height on the viewport */
+
+    min-height: 100vh;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}

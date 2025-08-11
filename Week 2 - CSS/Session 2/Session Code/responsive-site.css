@@ -1,0 +1,48 @@
+h1 {
+    text-align: center;
+}
+
+/* Media Queries */
+/* Give us the ability to do things when our viewport is a certain size */
+/* We can have overrides for our CSS */
+
+body {
+    background-color: gray;
+}
+
+p {
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /* Override just the CSS that needs to change on smaller devices */
+    /* The other styles still apply, we're just overriding existing styles here! */
+
+    body {
+        background-color: #d39727;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+    
+    /* Override just the CSS that needs to change on smaller devices */
+    /* The other styles still apply, we're just overriding existing styles here! */
+
+    body {
+        background-color: #5fbd83;
+    }
+
+}
+
+
+.container {
+    display: flex;
+    /* flex-direction: row; This is default behaviour */
+}
